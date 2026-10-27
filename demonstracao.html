@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demonstração | Conectados pela Tecnologia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <div class="container topo-linha">
+      <a href="index.html" class="marca"><span class="logo" aria-hidden="true"><i></i><i></i><i></i></span>Conectados pela Tecnologia</a>
+      <nav class="menu">
+        <a href="index.html">Quem somos</a>
+        <a href="o-que-fazemos.html">O que fazemos</a>
+        <a href="demonstracao.html" class="ativo">Demonstração</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Abertura -->
+  <section class="capa">
+    <canvas class="rede" aria-hidden="true"></canvas>
+    <div class="container">
+      <p class="sobretitulo">Demonstração para a turma</p>
+      <h1>Vamos ver a programação funcionando.</h1>
+      <p class="lead">
+        Nesta página reunimos o que será mostrado em sala: as ideias básicas,
+        um exemplo ao vivo e a atividade prática.
+      </p>
+    </div>
+  </section>
+
+  <!-- Conceitos -->
+  <section class="bloco">
+    <div class="container">
+      <h2>Três ideias para começar</h2>
+      <p class="intro-secao">
+        Quase todo programa, do jogo mais simples ao aplicativo de banco, usa
+        estas três ideias.
+      </p>
+
+      <div class="pilares">
+        <article class="pilar">
+          <span class="numero">VARIÁVEL</span>
+          <h3>Guardar informações</h3>
+          <p>
+            Uma variável é um espaço que guarda um valor, como o nome do jogador
+            ou a pontuação. Ela pode mudar ao longo do programa.
+          </p>
+        </article>
+
+        <article class="pilar">
+          <span class="numero">CONDIÇÃO</span>
+          <h3>Tomar decisões</h3>
+          <p>
+            Com uma condição, o programa escolhe o que fazer: se a nota for
+            maior ou igual a 7, o aluno passa; senão, tenta de novo.
+          </p>
+        </article>
+
+        <article class="pilar">
+          <span class="numero">REPETIÇÃO</span>
+          <h3>Fazer várias vezes</h3>
+          <p>
+            Uma repetição executa a mesma tarefa quantas vezes for preciso, sem
+            precisar escrever o código de novo a cada vez.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Exemplo ao vivo -->
+  <section class="bloco bloco-preto">
+    <div class="container faixa">
+      <div class="faixa-texto">
+        <h2>Teste você mesmo</h2>
+        <p>
+          Este exemplo usa as três ideias ao mesmo tempo. Digite um nome, escolha
+          uma pontuação e quantas rodadas quer ver. O programa guarda os valores
+          (variáveis), decide se foi aprovado (condição) e lista as rodadas
+          (repetição).
+        </p>
+        <p>
+          O código que roda por trás é parecido com este, em Python:
+        </p>
+        <pre class="codigo"><code><span class="c"># variáveis</span>
+nome = "Ana"
+pontos = 8
+
+<span class="c"># condição</span>
+if pontos &gt;= 7:
+    print(nome, "foi aprovada!")
+else:
+    print(nome, "vai tentar de novo")
+
+<span class="c"># repetição</span>
+for rodada in range(3):
+    print("Rodada", rodada + 1)</code></pre>
+      </div>
+
+      <div class="demo">
+        <div class="campo">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" placeholder="Digite um nome" maxlength="30">
+        </div>
+
+        <div class="campo">
+          <label for="pontos">Pontuação (0 a 10)</label>
+          <input type="number" id="pontos" min="0" max="10" value="8">
+        </div>
+
+        <div class="campo">
+          <label for="rodadas">Número de rodadas</label>
+          <input type="number" id="rodadas" min="1" max="10" value="3">
+        </div>
+
+        <button type="button" class="botao botao-demo" id="executar">Executar programa</button>
+
+        <pre class="saida" id="saida">A resposta do programa aparece aqui.</pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Atividade prática -->
+  <section class="bloco">
+    <div class="container">
+      <h2>Atividade prática</h2>
+      <p class="intro-secao">
+        Depois da demonstração, a turma cria a própria página usando o VS Code,
+        com HTML e CSS básicos. Cada passo tem um objetivo simples.
+      </p>
+
+      <ol class="passos">
+        <li>
+          <h3>Abrir o VS Code</h3>
+          <p>Usaremos o Visual Studio Code, um editor de código gratuito. Cada aluno ou dupla cria uma pasta para o projeto e abre essa pasta no editor.</p>
+        </li>
+        <li>
+          <h3>Criar a primeira página em HTML</h3>
+          <p>Criamos o arquivo index.html e escrevemos a estrutura básica de uma página, com título, parágrafo e uma lista. O HTML é o esqueleto: ele define o que aparece na tela.</p>
+        </li>
+        <li>
+          <h3>Abrir a página no navegador</h3>
+          <p>Abrimos o arquivo no navegador para ver o resultado. A cada mudança no código, basta salvar e atualizar a página para ver a diferença.</p>
+        </li>
+        <li>
+          <h3>Criar o estilo em CSS</h3>
+          <p>Criamos o arquivo style.css e ligamos ele ao HTML. O CSS cuida da aparência: cores, fontes, tamanhos e espaçamentos.</p>
+        </li>
+        <li>
+          <h3>Personalizar a página</h3>
+          <p>Cada aluno escolhe as cores, a fonte e o conteúdo da própria página, por exemplo uma apresentação pessoal ou um cartão sobre o seu hobby favorito.</p>
+        </li>
+        <li>
+          <h3>Testar e ajustar</h3>
+          <p>Errar faz parte. Os alunos observam o resultado, corrigem o que for preciso e tiram dúvidas com a nossa equipe durante toda a atividade.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Quiz e gincana: aviso -->
+  <section class="aviso-inicio">
+    <div class="container">
+      <p class="sobretitulo">Próxima etapa</p>
+      <h2>Agora vai começar o quiz e a gincana</h2>
+      <p>
+        Encerrada a demonstração, a turma segue para o quiz e depois para a
+        gincana. As duas atividades acontecem presencialmente, conduzidas pela
+        equipe, e não dependem desta página. Leiam as regras abaixo antes de
+        começar.
+      </p>
+    </div>
+  </section>
+
+  <!-- Regras -->
+  <section class="bloco bloco-cinza">
+    <div class="container">
+      <h2>Regras e observações</h2>
+
+      <div class="duas-colunas">
+
+        <article class="regras">
+          <h3>Quiz</h3>
+          <ul class="lista lista-clara">
+            <li>As perguntas são sobre o que foi visto na aula e na demonstração.</li>
+            <li>Todas as perguntas têm uma única resposta correta.</li>
+            <li>Cada pergunta tem um tempo limite, avisado pela equipe antes de começar.</li>
+            <li>Cada acerto vale 1 ponto. Não há desconto por erro.</li>
+            <li>Respondam em silêncio e sem consultar colegas ou celular, a não ser que a equipe autorize.</li>
+            <li>A decisão da equipe sobre a resposta correta é final.</li>
+          </ul>
+        </article>
+
+        <article class="regras">
+          <h3>Gincana</h3>
+          <ul class="lista lista-clara">
+            <li>A turma é dividida em equipes, definidas pela equipe do projeto.</li>
+            <li>Os desafios são de lógica e tecnologia, e todos os integrantes da equipe devem participar.</li>
+            <li>Cada desafio concluído vale pontos, informados antes de cada rodada.</li>
+            <li>Vale pedir ajuda dentro da própria equipe, mas não entre equipes.</li>
+            <li>Vence a equipe com mais pontos ao final. Em caso de empate, haverá um desafio de desempate.</li>
+            <li>A equipe vencedora recebe uma premiação simbólica.</li>
+          </ul>
+        </article>
+
+      </div>
+
+      <div class="observacoes">
+        <h3>Observações gerais</h3>
+        <ul class="lista lista-clara">
+          <li>Respeito com colegas e com a equipe do projeto vem antes de qualquer pontuação.</li>
+          <li>Ninguém precisa saber programar para participar. O objetivo é aprender e se divertir.</li>
+          <li>Avisem a equipe se tiverem dúvida sobre uma regra ou dificuldade para acompanhar uma atividade.</li>
+          <li>Durante as atividades, poderão ser feitos registros fotográficos ou audiovisuais, apenas com a autorização da escola e dos responsáveis.</li>
+          <li>Os registros serão usados somente para documentar e apresentar os resultados do projeto.</li>
+          <li>A ordem e o tempo das atividades podem mudar conforme o andamento da aula.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="rodape">
+    <div class="container rodape-linha">
+      <span>Conectados pela Tecnologia</span>
+      <span>Projeto de Extensão Universitária · SESI 265</span>
+    </div>
+  </footer>
+
+  <script>
+    var botao = document.getElementById("executar");
+    var saida = document.getElementById("saida");
+
+    botao.addEventListener("click", function () {
+      var nome = document.getElementById("nome").value.trim();
+      var pontos = Number(document.getElementById("pontos").value);
+      var rodadas = Number(document.getElementById("rodadas").value);
+
+      if (nome === "") {
+        nome = "Aluno";
+      }
+
+      if (isNaN(pontos) || pontos < 0 || pontos > 10) {
+        saida.textContent = "A pontuação precisa estar entre 0 e 10.";
+        return;
+      }
+
+      if (isNaN(rodadas) || rodadas < 1 || rodadas > 10) {
+        saida.textContent = "O número de rodadas precisa estar entre 1 e 10.";
+        return;
+      }
+
+      var texto = "";
+
+      /* condição */
+      if (pontos >= 7) {
+        texto += nome + " foi aprovado(a)!\n\n";
+      } else {
+        texto += nome + " vai tentar de novo.\n\n";
+      }
+
+      /* repetição */
+      for (var i = 1; i <= rodadas; i++) {
+        texto += "Rodada " + i + "\n";
+      }
+
+      var linhas = texto.split("\n");
+      saida.textContent = "";
+      linhas.forEach(function (l, i) {
+        setTimeout(function () { saida.textContent += (i ? "\n" : "") + l; }, i * 170);
+      });
+    });
+  </script>
+  <script src="script.js"></script>
+
+</body>
+</html>
